@@ -1,4 +1,4 @@
-package com.example.vskfiretv.company.utils;
+package com.univision.prendetv.utils;
 
 /**
  * Various Directive and Intent constants used within the application
@@ -44,14 +44,14 @@ public class Constants {
     public static final String EXTRA_PLAYBACK_SEEK_TIME_OFFSET = "seekTimeOffset";
 
     // Intent Actions for Search
-    public static final String ACTION_SEARCH_DISPLAY = "com.example.vskfiretv.ACTION_SEARCH_DISPLAY";
+    public static final String ACTION_SEARCH_DISPLAY = "com.univision.prendetv.ACTION_SEARCH_DISPLAY";
 
     // Intent Actions for Playback operations
-    public static final String ACTION_PLAYBACK_PLAY = "com.example.vskfiretv.ACTION_PLAYBACK_PLAY";
-    public static final String ACTION_PLAYBACK_PAUSE = "com.example.vskfiretv.ACTION_PLAYBACK_PAUSE";
-    public static final String ACTION_PLAYBACK_REWIND = "com.example.vskfiretv.ACTION_PLAYBACK_REWIND";
-    public static final String ACTION_PLAYBACK_STOP = "com.example.vskfiretv.ACTION_PLAYBACK_STOP";
-    public static final String ACTION_PLAYBACK_ADJUST_SEEK_POSITION = "com.example.vskfiretv.ACTION_PLAYBACK_ADJUST_SEEK_POSITION";
+    public static final String ACTION_PLAYBACK_PLAY = "com.univision.prendetv.ACTION_PLAYBACK_PLAY";
+    public static final String ACTION_PLAYBACK_PAUSE = "com.univision.prendetv.ACTION_PLAYBACK_PAUSE";
+    public static final String ACTION_PLAYBACK_REWIND = "com.univision.prendetv.ACTION_PLAYBACK_REWIND";
+    public static final String ACTION_PLAYBACK_STOP = "com.univision.prendetv.ACTION_PLAYBACK_STOP";
+    public static final String ACTION_PLAYBACK_ADJUST_SEEK_POSITION = "com.univision.prendetv.ACTION_PLAYBACK_ADJUST_SEEK_POSITION";
 
     // Launch Target URIs
     public static final String URI_FOR_PLAY_SOMETHING = "uri.for.play.something";

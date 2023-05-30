@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.vskfiretv.company">
+    package="com.univision.prendetv">
 
     <uses-feature
         android:name="android.hardware.touchscreen"
@@ -16,7 +16,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".VSKReferenceApplication"
+        android:name="com.univision.prendetv.VSKReferenceApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -27,14 +27,15 @@
         <meta-data android:name="com.amazon.alexa.vsk_app_agent_api.capabilities" android:resource="@raw/static_capabilities" />
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.univision.prendetv.MainActivity"
             android:launchMode="singleTop"
             android:banner="@drawable/app_icon_your_company"
             android:icon="@drawable/app_icon_your_company"
             android:label="@string/app_name"
             android:logo="@drawable/app_icon_your_company"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -42,13 +43,13 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".DetailsActivity" />
-        <activity android:name=".PlaybackActivity" />
-        <activity android:name=".BrowseErrorActivity" />
+        <activity android:name="com.univision.prendetv.DetailsActivity" />
+        <activity android:name="com.univision.prendetv.PlaybackActivity" />
+        <activity android:name="com.univision.prendetv.BrowseErrorActivity" />
 
         <!-- You must declare a broadcast receiver which can handle Alexa directives and other Intent messages from the VSK Agent -->
         <receiver
-            android:name=".receiver.AlexaDirectiveReceiver"
+            android:name="com.univision.prendetv.receiver.AlexaDirectiveReceiver"
             android:enabled="true"
             android:exported="true"
             android:permission="com.amazon.alexa.androidapplicationagent.permission.SEND_DATA">

@@ -12,10 +12,11 @@
  * the License.
  */
 
-package com.example.vskfiretv.company;
+package com.univision.prendetv;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 
@@ -43,6 +44,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.GlideDrawable;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
+import com.univision.prendetv.R;
 
 import java.util.Collections;
 import java.util.List;
@@ -112,7 +114,9 @@ public class MainFragment extends BrowseFragment {
         mBackgroundManager = BackgroundManager.getInstance(getActivity());
         mBackgroundManager.attach(getActivity().getWindow());
 
-        mDefaultBackground = ContextCompat.getDrawable(getContext(), R.drawable.default_background);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            mDefaultBackground = ContextCompat.getDrawable(getContext(), R.drawable.default_background);
+        }
         mMetrics = new DisplayMetrics();
         getActivity().getWindowManager().getDefaultDisplay().getMetrics(mMetrics);
     }
@@ -124,9 +128,13 @@ public class MainFragment extends BrowseFragment {
         setHeadersTransitionOnBackEnabled(true);
 
         // set fastLane (or headers) background color
-        setBrandColor(ContextCompat.getColor(getContext(), R.color.fastlane_background));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            setBrandColor(ContextCompat.getColor(getContext(), R.color.fastlane_background));
+        }
         // set search icon color
-        setSearchAffordanceColor(ContextCompat.getColor(getContext(), R.color.search_opaque));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            setSearchAffordanceColor(ContextCompat.getColor(getContext(), R.color.search_opaque));
+        }
     }
 
     private void setupEventListeners() {

@@ -12,7 +12,7 @@
  * the License.
  */
 
-package com.example.vskfiretv.company;
+package com.univision.prendetv;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -26,12 +26,12 @@ import androidx.fragment.app.FragmentActivity;
 
 import java.text.MessageFormat;
 
-import static com.example.vskfiretv.company.utils.Constants.ACTION_PLAYBACK_ADJUST_SEEK_POSITION;
-import static com.example.vskfiretv.company.utils.Constants.ACTION_PLAYBACK_PAUSE;
-import static com.example.vskfiretv.company.utils.Constants.ACTION_PLAYBACK_PLAY;
-import static com.example.vskfiretv.company.utils.Constants.ACTION_PLAYBACK_REWIND;
-import static com.example.vskfiretv.company.utils.Constants.ACTION_PLAYBACK_STOP;
-import static com.example.vskfiretv.company.utils.Constants.EXTRA_PLAYBACK_SEEK_TIME_OFFSET;
+import static com.univision.prendetv.utils.Constants.ACTION_PLAYBACK_ADJUST_SEEK_POSITION;
+import static com.univision.prendetv.utils.Constants.ACTION_PLAYBACK_PAUSE;
+import static com.univision.prendetv.utils.Constants.ACTION_PLAYBACK_PLAY;
+import static com.univision.prendetv.utils.Constants.ACTION_PLAYBACK_REWIND;
+import static com.univision.prendetv.utils.Constants.ACTION_PLAYBACK_STOP;
+import static com.univision.prendetv.utils.Constants.EXTRA_PLAYBACK_SEEK_TIME_OFFSET;
 
 /**
  * Loads {@link PlaybackVideoFragment}.

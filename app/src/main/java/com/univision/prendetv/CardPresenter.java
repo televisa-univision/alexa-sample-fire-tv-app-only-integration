@@ -12,7 +12,7 @@
  * the License.
  */
 
-package com.example.vskfiretv.company;
+package com.univision.prendetv;
 
 import android.graphics.drawable.Drawable;
 
@@ -24,6 +24,7 @@ import android.util.Log;
 import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
+import com.univision.prendetv.R;
 
 /*
  * A CardPresenter is used to generate Views and bind Objects to them on demand.

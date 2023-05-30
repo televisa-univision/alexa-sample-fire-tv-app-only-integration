@@ -1,9 +1,9 @@
-package com.example.vskfiretv.company;
+package com.univision.prendetv;
 
 import android.app.Application;
 import android.util.Log;
 
-import com.example.vskfiretv.company.reporter.DynamicCapabilityReporter;
+import com.univision.prendetv.reporter.DynamicCapabilityReporter;
 
 /**
  * Application class that has global initialization

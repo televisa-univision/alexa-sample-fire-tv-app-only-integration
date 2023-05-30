@@ -12,7 +12,7 @@
  * the License.
  */
 
-package com.example.vskfiretv.company;
+package com.univision.prendetv;
 
 import android.net.Uri;
 import android.os.Bundle;

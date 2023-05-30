@@ -1,4 +1,4 @@
-package com.example.vskfiretv.company.utils;
+package com.univision.prendetv.utils;
 
 import android.content.Context;
 import android.util.Log;

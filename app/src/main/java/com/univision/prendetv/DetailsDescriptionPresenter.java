@@ -12,25 +12,20 @@
  * the License.
  */
 
-package com.example.vskfiretv.company;
+package com.univision.prendetv;
 
-import android.app.Activity;
-import android.os.Bundle;
+import androidx.leanback.widget.AbstractDetailsDescriptionPresenter;
 
-/*
- * Details activity class that loads LeanbackDetailsFragment class
- */
-public class DetailsActivity extends Activity {
-    public static final String SHARED_ELEMENT_NAME = "hero";
-    public static final String MOVIE = "Movie";
+public class DetailsDescriptionPresenter extends AbstractDetailsDescriptionPresenter {
 
-    /**
-     * Called when the activity is first created.
-     */
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_details);
-    }
+    protected void onBindDescription(ViewHolder viewHolder, Object item) {
+        Movie movie = (Movie) item;
 
+        if (movie != null) {
+            viewHolder.getTitle().setText(movie.getTitle());
+            viewHolder.getSubtitle().setText(movie.getStudio());
+            viewHolder.getBody().setText(movie.getDescription());
+        }
+    }
 }

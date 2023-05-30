@@ -1,4 +1,4 @@
-package com.example.vskfiretv.company.reporter;
+package com.univision.prendetv.reporter;
 
 import android.content.Context;
 import android.util.Log;
@@ -6,8 +6,8 @@ import android.util.Log;
 import com.amazon.alexa.vsk_app_agent_api.AddOrUpdateCapabilitiesRequest;
 import com.amazon.alexa.vsk_app_agent_api.AlexaCapability;
 import com.amazon.alexa.vsk_app_agent_client_lib.VSKAgentClient;
-import com.example.vskfiretv.company.R;
-import com.example.vskfiretv.company.utils.ResourceUtils;
+import com.univision.prendetv.R;
+import com.univision.prendetv.utils.ResourceUtils;
 
 import java.util.ArrayList;
 import java.util.List;

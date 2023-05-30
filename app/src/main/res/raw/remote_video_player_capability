@@ -10,7 +10,7 @@
     "catalogs": [
       {
         "type": "VIDEO_INGESTION_IDENTIFIER",
-        "sourceId": "ontv"
+        "sourceId": "VIX_GLOBAL_JOI_VI"
       }]
   }
 }

@@ -12,7 +12,7 @@
  * the License.
  */
 
-package com.example.vskfiretv.company;
+package com.univision.prendetv;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,16 +22,17 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 
-import com.example.vskfiretv.company.reporter.DynamicCapabilityReporter;
+import com.univision.prendetv.R;
+import com.univision.prendetv.reporter.DynamicCapabilityReporter;
 
 import java.text.MessageFormat;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import static com.example.vskfiretv.company.utils.Constants.ACTION_SEARCH_DISPLAY;
-import static com.example.vskfiretv.company.utils.Constants.EXTRA_SEARCHED_MOVIES;
-import static com.example.vskfiretv.company.utils.Constants.EXTRA_SEARCH_TEXT;
+import static com.univision.prendetv.utils.Constants.ACTION_SEARCH_DISPLAY;
+import static com.univision.prendetv.utils.Constants.EXTRA_SEARCHED_MOVIES;
+import static com.univision.prendetv.utils.Constants.EXTRA_SEARCH_TEXT;
 
 /*
  * Main Activity class that loads {@link MainFragment}.

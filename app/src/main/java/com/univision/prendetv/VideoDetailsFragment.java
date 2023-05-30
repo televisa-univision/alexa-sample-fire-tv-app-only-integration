@@ -12,11 +12,12 @@
  * the License.
  */
 
-package com.example.vskfiretv.company;
+package com.univision.prendetv;
 
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.os.Build;
 import android.os.Bundle;
 
 import androidx.leanback.app.DetailsFragment;
@@ -45,6 +46,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.GlideDrawable;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
+import com.univision.prendetv.R;
 
 import java.util.Collections;
 import java.util.List;
@@ -116,8 +118,10 @@ public class VideoDetailsFragment extends DetailsFragment {
     private void setupDetailsOverviewRow() {
         Log.d(TAG, "doInBackground: " + mSelectedMovie.toString());
         final DetailsOverviewRow row = new DetailsOverviewRow(mSelectedMovie);
-        row.setImageDrawable(
-                ContextCompat.getDrawable(getContext(), R.drawable.default_background));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            row.setImageDrawable(
+                    ContextCompat.getDrawable(getContext(), R.drawable.default_background));
+        }
         int width = convertDpToPixel(getActivity().getApplicationContext(), DETAIL_THUMB_WIDTH);
         int height = convertDpToPixel(getActivity().getApplicationContext(), DETAIL_THUMB_HEIGHT);
         Glide.with(getActivity())
@@ -161,8 +165,10 @@ public class VideoDetailsFragment extends DetailsFragment {
         // Set detail background.
         FullWidthDetailsOverviewRowPresenter detailsPresenter =
                 new FullWidthDetailsOverviewRowPresenter(new DetailsDescriptionPresenter());
-        detailsPresenter.setBackgroundColor(
-                ContextCompat.getColor(getContext(), R.color.selected_background));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            detailsPresenter.setBackgroundColor(
+                    ContextCompat.getColor(getContext(), R.color.selected_background));
+        }
 
         // Hook up transition element.
         FullWidthDetailsOverviewSharedElementHelper sharedElementHelper =

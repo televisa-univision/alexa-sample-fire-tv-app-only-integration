@@ -2,32 +2,32 @@ apply plugin: 'com.android.application'
 
 android {
 
-//    signingConfigs {
-//        firetv {
-//            storeFile file('/Users/yourname/path/to/androidkeys.jks')
-//            storePassword var
-//            keyPassword var
-//            keyAlias = 'yourandroidkeyalias'
-//        }
-//    }
+    signingConfigs {
+        firetv {
+            storeFile file('/Users/jesusruizcarmena/Documents/Amazon IAB/prendetv/original/keystore.jks')
+            keyAlias 'univision-prende-alias'
+            storePassword 'prendelit2020'
+            keyPassword 'prendelit2020'
+        }
+    }
 
-    compileSdkVersion 29
+    compileSdkVersion 33
     buildToolsVersion "29.0.2"
     defaultConfig {
-        applicationId "com.example.vskfiretv.company"
+        applicationId "com.univision.prendetv"
         minSdkVersion 21
-        targetSdkVersion 29
-        versionCode 1
+        targetSdkVersion 33
+        versionCode 654
         versionName "1.0"
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            // signingConfig signingConfigs.firetv
+            signingConfig signingConfigs.firetv
         }
         debug {
-            // signingConfig signingConfigs.firetv
+            signingConfig signingConfigs.firetv
         }
     }
     compileOptions {
